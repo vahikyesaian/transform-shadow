@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 400px;
+            height: 400px;
+            margin: 100px auto;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(img/jon-flobrant-rb7-lca_diu-unsplash_0.jpg);
+            background-size: cover;
+            box-shadow: 0 0 20px 10px;
+            transition-property: transform, box-shadow;
+            transition-duration: 1s, 1s;
+            transition-delay: .1s, 2s;
+            transition-timing-function: linear;
+           
+        }
+        .box>div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            background-image: url(img/do-not-litter-sign-vector-9566846.jpg);
+            background-size: cover;
+            transition-property: transform, box-shadow;
+            transition-duration: 1s, 1s;
+            transition-delay:1s, 2s ;
+        }
+        .box:hover{
+            transform: perspective(700px) rotateY(25deg);
+            box-shadow: -70px -80px 20px rgba(0, 0, 0, 0.493);
+           
+            
+        }
+        .box:hover>div{
+            transform: perspective(700px) rotateY(-50deg);
+            box-shadow: -30px -40px 20px 10px rgba(0, 0, 0, 0.493);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div></div>
+    </div>
+</body>
+</html>
